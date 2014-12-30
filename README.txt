@@ -2,7 +2,7 @@
 Contributors: etcio, nphaskins
 Tags: discourse, forum, sso
 Requires at least: 3.6
-Tested up to: 3.6
+Tested up to: 4.1
 Stable tag: 0.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -64,8 +64,8 @@ That's it!
 
 = Where can I get a Discourse forum? =
 
-https://discourse.org
-https://www.discoursehosting.com/
+* https://discourse.org
+* https://www.discoursehosting.com/
 
 == Screenshots ==
 
