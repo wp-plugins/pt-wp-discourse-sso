@@ -69,9 +69,11 @@ That's it!
 
 == Screenshots ==
 
-1. The plugin settings screen. Here you enter your secret key as well as the url to your discourse site.
-2. Custom SSO page can be assigned with any theme.
-3. Enjoy single sign on between WP + Discourse. Cool!
+1. Plugin settings screen in WordPress.
+2. Discourse settings screen.
+3. Now when you click on login...
+4. Your users are authenticated against your WordPress installation!
+5. Enjoy single sign on between WP + Discourse. Cool!
 
 == Credits ==
 
