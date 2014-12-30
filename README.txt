@@ -15,7 +15,7 @@ Discourse is a fantastic new forum that can add another layer to your WordPress 
 
 Notes:
 
-*   This plugin requires permalinks to be enabled.
+*   The Discourse option "Staff must approve all new user accounts before they are allowed to access the site." needs to be disabled for this to work properly.
 
 Some Features:
 
@@ -64,8 +64,8 @@ That's it!
 
 = Where can I get a Discourse forum? =
 
-https://www.discoursehosting.com/
 https://discourse.org
+https://www.discoursehosting.com/
 
 == Screenshots ==
 
