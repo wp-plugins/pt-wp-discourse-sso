@@ -3,7 +3,7 @@ Contributors: etcio, nphaskins
 Tags: discourse, forum, sso
 Requires at least: 3.6
 Tested up to: 4.1
-Stable tag: 0.2.2
+Stable tag: 0.2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -69,11 +69,9 @@ That's it!
 
 == Screenshots ==
 
-1. Plugin settings screen in WordPress.
-2. Discourse settings screen.
-3. Now when you click on login...
-4. Your users are authenticated against your WordPress installation!
-5. Enjoy single sign on between WP + Discourse. Cool!
+1. The plugin settings screen. Here you enter your secret key as well as the url to your discourse site.
+2. Custom SSO page can be assigned with any theme.
+3. Enjoy single sign on between WP + Discourse. Cool!
 
 == Credits ==
 
@@ -81,6 +79,10 @@ That's it!
 * SSO methods adapted from ArmedGuy : https://github.com/ArmedGuy/discourse_sso_php
 
 == Changelog ==
+
+= 0.2.3 =
+* Send avatars to discourse (Thanks @pjv https://github.com/PrimeTimeCode/pt-wp-discourse-sso/pull/1)
+* Additional sanitization (Thanks @pratyushmittal https://github.com/PrimeTimeCode/pt-wp-discourse-sso/pull/2)
 
 = 0.2.2 =
 * Better compatibility with PHP 5.2

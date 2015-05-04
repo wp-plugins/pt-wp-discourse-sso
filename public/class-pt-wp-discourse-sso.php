@@ -349,6 +349,12 @@ class WP_Discourse_SSO {
 	private function restorePayload($p){
 		return urldecode( str_replace( '%0B', '%0A', urlencode( $p ) ) );
 	}
+	
+	private function get_avatar_url($user_id) {
+		$avatar = get_avatar($user_id);
+		if(preg_match("/src=['\"](.*?)['\"]/i", $avatar, $matches))
+			return utf8_uri_encode($matches[1]);
+	}
 
 	/**
 	 * Callback function to intercept and validate SSO requests
@@ -375,7 +381,7 @@ class WP_Discourse_SSO {
 				$redirect = $this->cleansePayload( $redirect );
 
 				// Build login URL
-				$login = wp_login_url( $redirect );
+				$login = wp_login_url( esc_url_raw( $redirect ) );
 
 				// Redirect to login
 				wp_redirect( $login );
@@ -411,7 +417,8 @@ class WP_Discourse_SSO {
 					'username' => $current_user->user_login,
 					'email' => $current_user->user_email,
 					'about_me' => $current_user->description,
-					'external_id' => $current_user->ID
+					'external_id' => $current_user->ID,
+					'avatar_url' => self::get_avatar_url($current_user->ID)
 				);
 
 				// Build login string
